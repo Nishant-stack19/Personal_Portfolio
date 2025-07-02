@@ -1,0 +1,550 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyPortfolio</title>
+        <!-- Bootstrap CSS (load first) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <!-- Your Custom CSS (load after Bootstrap) -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- REMOVE THIS LINE due to it affects the nav bar -->
+        <!-- <script src="tailwind_css_cdn.16"></script> -->
+
+        <!-- Spline Viewer Script -->
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.12/build/spline-viewer.js"></script>
+
+    </head>
+    <body>
+
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <span class="brand-text">Nishant</span><span class="brand-accent">.</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Experience">Experirence</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link resume-btn" href="assets/resume.pdf" download>
+                                <i class="fas fa-download me-1"></i>Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Section + -->
+        <section id="home">
+          <div id="bg-video">
+            <video autoplay loop muted>
+              <source src="Motion.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Foreground content container -->
+          <div id="container" class="mt-10" style="margin-top: 4rem;">
+            <div class="card-wrapper">
+              <div class="rectangle-card">
+                <h1 style="align-content: end;">Nishant Dharukar</h1>
+                <div class="text-animate">
+                  <h2 class="typewriter">Full Stack Developer</h2>
+                </div>
+                <p class="text-left">I build beautiful & functional web applications with modern technologies.</p>
+                <p>I design and develop modern, responsive web applications that deliver impactful digital experiences.</p>
+                <div class="social-media">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="hero-actions">
+                  <a href="#projects" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket me-2"></i>View My Work
+                  </a>
+                  <a href="#contact" class="btn btn-outline-primary btn-lg" id="contact-me">
+                    <i class="fas fa-paper-plane me-2"></i>Let's Connect
+                  </a>
+                </div>
+              </div>
+              <div class="circle-card">
+                <img src="my_photo.jpg" alt="Profile Image" class="circle-image">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section  -->
+        <section id="about" class="bg-black">
+          <div class="about-me bg-black">
+            <!-- LEFT SECTION -->
+            <div class="about-left">
+              <h1 class="about-title">About Me</h1>
+              <div id="spline" style="height: 400px; width: 100%;">
+                <spline-viewer loading="eager" url="https://prod.spline.design/G-koKfxD7wKWy4I4/scene.splinecode" style="width: 100%; height: 400px;"></spline-viewer>
+              </div>
+            </div>
+
+            <!-- RIGHT SECTION -->
+            <div class="about-right">
+              <div class="glass-card py-3 px-3 rounded-xl text-white">
+                <h3 class="h4 fw-bold mb-3 text-blue-400">My Journey</h3>
+                <p class="mb-4">
+                  I'm Nishant Dharukar, an aspiring software developer with a strong foundation in Information Technology and a deep interest in building impactful digital experiences. I  enjoy creating intuitive, user-friendly applications backed by clean and efficient code.
+                </p>
+                <p class="mb-4">
+                  Always eager to learn and grow, I actively explore web and mobile development, constantly seeking new    technologies and challenges that push me to think   creatively and solve real-world problems.
+                </p>
+                <div class="row mb-4">
+                  <div class="col-6">
+                    <h4 class="h6 fw-bold">Education</h4>
+                    <p class="small mb-0">B.Tech Information Technology<br>J.D. College of Engineering & Management</p>
+                  </div>
+                  <div class="col-6">
+                    <h4 class="h6 fw-bold">Location</h4>
+                    <p class="small">Nagpur<br/>Maharashtra, India</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-3" id="icons">
+                  <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="fab  fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="Experience">
+          <div class="experience-container">
+            <h1>Experirence</h1>
+            <div class="timeline">
+            
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <img src="image.png" alt="Tamizhan Skills Logo" class="company-logo"/>
+
+                </div>
+                <div class="timeline-content">
+                  <div class="company-details">
+                    <h3>Tamizhan Skills</h3>
+                    <span class="timestamp">June 2025 – Present</span>
+                    <span class="duration">Internship · 1 mo</span>
+                  </div>
+                  <div class="roles">
+                    <div class="role">
+                      <h4>Intern - Python Programming</h4>
+                      <p class="role-duration">June 2025 – Present · 1 mo</p>
+                      <p class="description">
+                        Undergoing practical training and skill development through 'Tamizhan Skills' RISE Internship Program.
+                      </p>
+                    </div>
+                    <div class="role">
+                      <h4>Intern - Web Development</h4>
+                      <p class="role-duration">June 2025 – Present · 1 mo</p>
+                      <p class="description">
+                        Undergoing practical training and skill development through 'Tamizhan Skills' RISE Internship Program.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="py-5 bg-black">
+          <div class="container">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold">My Skills</h2>
+              <div class="divider bg-primary mx-auto mb-4"></div>
+              <p class="lead mb-5">
+                I'm building a solid foundation in software development with hands-on experience in:<br>
+                C, C++, Java, Python, SQL, Git, GitHub, HTML, CSS (Tailwind), and basic JavaScript.<br>
+                Eager to learn, grow, and collaborate with professionals in the tech space!
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <!-- Frontend Skills -->
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="skill-icon bg-primary-subtle text-primary me-3">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <h3 class="h5 fw-bold mb-0">Frontend Development</h3>
+                    </div>
+                  
+                    <div class="skill-tags mb-4">
+                      <span class="skill-tag">HTML</span>
+                      <span class="skill-tag">CSS (Tailwind)</span>
+                      <span class="skill-tag">Basic JavaScript</span>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-medium small">HTML & CSS</span>
+                        <span class="text-muted small">90%</span>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-primary" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  
+                    <div>
+                      <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-medium small">Basic JavaScript</span>
+                        <span class="text-muted small">60%</span>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-primary" style="width: 60%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Backend Skills -->
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="skill-icon bg-success-subtle text-success me-3">
+                        <i class="fas fa-server"></i>
+                      </div>
+                      <h3 class="h5 fw-bold mb-0">Backend Development</h3>
+                    </div>
+                  
+                    <div class="skill-tags mb-4">
+                      <span class="skill-tag bg-success-subtle text-success">Python</span>
+                      <span class="skill-tag bg-success-subtle text-success">SQL</span>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-medium small">Python</span>
+                        <span class="text-muted small">80%</span>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-success" style="width: 80%"></div>
+                      </div>
+                    </div>
+                  
+                    <div>
+                      <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-medium small">SQL</span>
+                        <span class="text-muted small">75%</span>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-success" style="width: 75%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Tools & Other Skills -->
+              <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="skill-icon bg-purple-subtle text-purple me-3">
+                        <i class="fas fa-wrench"></i>
+                      </div>
+                      <h3 class="h5 fw-bold mb-0">Tools & Version Control</h3>
+                    </div>
+                  
+                    <div class="skill-tags mb-4">
+                      <span class="skill-tag bg-purple-subtle text-purple">Git</span>
+                      <span class="skill-tag bg-purple-subtle text-purple">GitHub</span>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-medium small">Git & GitHub</span>
+                        <span class="text-muted small">95%</span>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-purple" style="width: 95%"></div>
+                      </div>
+                    </div>
+                  
+                    <div>
+                      <div class="d-flex justify-content-between mb-1">
+                        <span class="fw-medium small">Version Control</span>
+                        <span class="text-muted small">90%</span>
+                      </div>
+                      <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-purple" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="projects" class="py-5 bg-black">
+          <div class="container">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold">My Projects</h2>
+              <div class="divider bg-primary mx-auto mb-4"></div>
+              <p class="lead mb-5">
+                Here are some of my recent projects. Each one presented unique challenges and opportunities for growth.
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <!-- Project 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" 
+                       class="card-img-top" alt="E-commerce Platform">
+                  <div class="card-body">
+                    <h3 class="h5 fw-bold mb-2">CO2 Emission Prediction Model</h3>
+                    <p class="card-text text-muted mb-3">A full-featured e-commerce solution with user authentication, product management, and payment processing.</p>
+                    <div class="mb-3">
+                      <span class="badge bg-primary-subtle text-primary me-1">React</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Node.js</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">MongoDB</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Stripe</span>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <a href="https://example.com/ecommerce" class="text-primary fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                      </a>
+                      <a href="https://github.com/example/ecommerce" class="text-dark fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fab fa-github me-1"></i> Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="L.png" 
+                       class="card-img-top" alt="Task Management App">
+                  <div class="card-body">
+                    <h3 class="h5 fw-bold mb-2">Student Result Management System</h3>
+                    <p class="card-text text-muted mb-3">A collaborative student result management system with real-time updates, an intuitive interface, and features for managing student data, tracking academic progress, and providing easy access to results for both students and faculty."</p>
+                    <div class="mb-3">
+                      <span class="badge bg-primary-subtle text-primary me-1">PHP</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">MySQL</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Bootstrap</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">JavaScript</span>
+                    </div>
+
+                    <div class="d-flex gap-3">
+                      <a href="https://example.com/taskmanager" class="text-primary fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                      </a>
+                      <a href="https://github.com/example/taskmanager" class="text-dark fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fab fa-github me-1"></i> Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" 
+                       class="card-img-top" alt="Fitness Tracker">
+                  <div class="card-body">
+                    <h3 class="h5 fw-bold mb-2">Personal Desktop Ai Assistant (ALPHA)</h3>
+                    <p class="card-text text-muted mb-3">A mobile-first fitness application with workout plans, progress tracking, and nutritional guidance.</p>
+                    <div class="mb-3">
+                      <span class="badge bg-primary-subtle text-primary me-1">React Native</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Express</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">PostgreSQL</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Chart.js</span>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <a href="https://example.com/fitnesstracker" class="text-primary fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                      </a>
+                      <a href="https://github.com/example/fitnesstracker" class="text-dark fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fab fa-github me-1"></i> Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1478358161113-b0e11994a36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80" 
+                       class="card-img-top" alt="Weather Dashboard">
+                  <div class="card-body">
+                    <h3 class="h5 fw-bold mb-2">To Do List App</h3>
+                    <p class="card-text text-muted mb-3">An interactive weather application with location-based forecasts, historical data, and customizable alerts.</p>
+                    <div class="mb-3">
+                      <span class="badge bg-primary-subtle text-primary me-1">Vue.js</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Python</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Weather API</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">D3.js</span>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <a href="https://example.com/weather" class="text-primary fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                      </a>
+                      <a href="https://github.com/example/weather" class="text-dark fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fab fa-github me-1"></i> Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 5 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
+                       class="card-img-top" alt="Blog Platform">
+                  <div class="card-body">
+                    <h3 class="h5 fw-bold mb-2">Blog Platform</h3>
+                    <p class="card-text text-muted mb-3">A full-featured blogging platform with markdown support, user roles, and social sharing capabilities.</p>
+                    <div class="mb-3">
+                      <span class="badge bg-primary-subtle text-primary me-1">Next.js</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">GraphQL</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Auth0</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Prisma</span>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <a href="https://example.com/blog" class="text-primary fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                      </a>
+                      <a href="https://github.com/example/blog" class="text-dark fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fab fa-github me-1"></i> Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 6 -->
+              <!-- <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80" 
+                       class="card-img-top" alt="Educational Platform">
+                  <div class="card-body">
+                    <h3 class="h5 fw-bold mb-2">Educational Platform</h3>
+                    <p class="card-text text-muted mb-3">An online learning platform with video courses, interactive quizzes, and progress tracking for students.</p>
+                    <div class="mb-3">
+                      <span class="badge bg-primary-subtle text-primary me-1">React</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Django</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">AWS S3</span>
+                      <span class="badge bg-primary-subtle text-primary me-1">Stripe</span>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <a href="https://example.com/education" class="text-primary fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> Live Demo
+                      </a>
+                      <a href="https://github.com/example/education" class="text-dark fw-medium small d-flex align-items-center" target="_blank">
+                        <i class="fab fa-github me-1"></i> Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="text-center mt-5">
+              <a href="#" class="btn btn-outline-primary px-4 py-2">
+                View All Projects <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-black">
+          <div class="container">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold">Get In Touch</h2>
+              <div class="divider bg-primary mx-auto mb-4"></div>
+              <p class="lead mb-5">
+                Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+              </p>
+            </div>
+
+
+              <div class="col-lg-7">
+                <div class="card border-0 shadow-sm">
+                  <div class="glass-card p-4">
+                    <h3 class="h4 fw-bold mb-4">Send Me a Message</h3>
+
+                    <form id="contactForm">
+                      <div class="mb-">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+                      </div>
+
+                      <div class="mb-4">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+                      </div>
+
+                      <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bootstrap JavaScript Bundle (must be at the end of <body>) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Your custom JavaScript -->
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
