@@ -214,6 +214,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6px);
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 30px;
     color: white;
     box-shadow: var(--shadow-md);
@@ -623,10 +624,6 @@ h1 {
     }
 }
 
-
-
-
-
 /* Skill Tags */
 .skill-tags {
   display: flex;
@@ -662,4 +659,16 @@ h1 {
 }
 .text-purple {
   color: var(--purple);
+}
+
+
+.lead{
+    font-family: sans-serif;
+        font-size: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+    border-radius: 20px;
 }

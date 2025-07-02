@@ -193,7 +193,7 @@
             <div class="text-center mb-5">
               <h2 class="display-5 fw-bold">My Skills</h2>
               <div class="divider bg-primary mx-auto mb-4"></div>
-              <p class="lead mb-5">
+              <p class="lead mb-5 text-center">
                 I'm building a solid foundation in software development with hands-on experience in:<br>
                 C, C++, Java, Python, SQL, Git, GitHub, HTML, CSS (Tailwind), and basic JavaScript.<br>
                 Eager to learn, grow, and collaborate with professionals in the tech space!
@@ -242,7 +242,7 @@
               </div>
             
               <!-- Backend Skills -->
-              <div class="col-md-4">
+              <div class="card2 col-md-4">
                 <div class="card border-0 shadow-sm h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-4">
@@ -501,46 +501,78 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-5 bg-black">
+        <section id="contact" class="py-5 bg-black text-white">
           <div class="container">
             <div class="text-center mb-5">
               <h2 class="display-5 fw-bold">Get In Touch</h2>
-              <div class="divider bg-primary mx-auto mb-4"></div>
-              <p class="lead mb-5">
-                Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+              <div class="divider bg-primary mx-auto mb-3" style="height: 4px; width: 60px; border-radius: 2px;"></div>
+              <p class="lead mx-auto" style="max-width: 600px;">
+                Have a project or collaboration in mind? Feel free to drop a message—I'd love to hear from you!
               </p>
             </div>
-
-
-              <div class="col-lg-7">
-                <div class="card border-0 shadow-sm">
-                  <div class="glass-card p-4">
-                    <h3 class="h4 fw-bold mb-4">Send Me a Message</h3>
-
-                    <form id="contactForm">
-                      <div class="mb-">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
-                      </div>
-
-                      <div class="mb-4">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
-                      </div>
-
-                      <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+          
+            <div class="row align-items-stretch g-4">
+              
+              <!-- Contact Info (Left) -->
+        <div class="col-lg-5">
+          <div class="glass-card h-100 p-4 d-flex flex-column justify-content-start text-center text-lg-start">
+          
+            <!-- Spline Bot Embed -->
+            <div class="spline-container mb-4">
+              <spline-viewer url="https://prod.spline.design/8UGOIxPC0WzS4LBO/scene.splinecode"></spline-viewer>
+            </div>
+          
+            <h4 class="fw-bold mb-3">Let's Connect</h4>
+            <p class="mb-3">Reach out via email or fill out the form. I usually reply within 24 hours!</p>
+          
+            <div class="mb-3">
+              <i class="fas fa-envelope me-2 text-primary"></i>
+              <a href="mailto:you@example.com" class="text-white text-decoration-none">you@example.com</a>
+            </div>
+          
+            <div>
+              <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+              <span>City, Country</span>
             </div>
           </div>
-        </section>
+        </div>
+        
+
+      <!-- Contact Form (Right) -->
+      <div class="col-lg-7">
+        <div class="glass-card p-4 h-100">
+          <h4 class="fw-bold mb-4">Send Me a Message</h4>
+
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         <!-- Bootstrap JavaScript Bundle (must be at the end of <body>) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Your custom JavaScript -->
