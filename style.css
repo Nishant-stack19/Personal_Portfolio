@@ -3,7 +3,6 @@
     --primary-dark: #0f0f23;
     --secondary-dark: #1a1a2e;
     --tertiary-dark: #16213e;
-
     /* Blue Palette */
     --royal-blue: #2563eb;
     --electric-blue: #06b6d4;
@@ -407,6 +406,8 @@ body {
 #spline {
     width: 100%;
     max-width: 400px;
+    background: linear-gradient(to top, black, white);
+    border-radius: 10%;
 }
 
 #spline spline-viewer {
@@ -678,11 +679,29 @@ h1 {
     font-family: sans-serif;
         font-size: 18px;
     padding: 10px;
-    background: rgba(255, 255, 255, 0.05);
+    background: black;
     border: 1px solid rgb(255, 255, 255);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-md);
     border-radius: 20px;
+}
+
+.lead::before {
+  content: "";
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at center, rgba(123, 72, 243, 0.24), transparent 60%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.lead:hover::before {
+  opacity: 1;
 }
 
 .footer{
