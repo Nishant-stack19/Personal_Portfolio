@@ -692,12 +692,13 @@ h1 {
   top: var(--y, 50%);
   left: var(--x, 50%);
   transform: translate(-50%, -50%);
-  width: 150%;
-  height: 150%;
+  width: 100%; /* Was 150% */
+  height: 100%; /* Was 150% */
   background: radial-gradient(circle at center, rgba(123, 72, 243, 0.24), transparent 60%);
   pointer-events: none;
   transition: opacity 0.3s ease;
   opacity: 0;
+  z-index: 0;
 }
 
 .lead:hover::before {
