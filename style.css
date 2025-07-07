@@ -229,6 +229,22 @@ body {
     font-weight: 400;
 }
 
+.text-left{
+    text-align: left;
+}
+#text-1{
+    text-align: start;
+}
+
+@media (max-width: 768px){
+    #text-1{
+        text-align: center;
+    }
+
+    .text-left{
+        text-align: center;
+    }
+}
 /* Base Typing Animation */
 .typewriter {
   display: inline-block;
@@ -275,7 +291,7 @@ body {
     font-size: 1rem;
 }
 
-.social-media a {
+/* .social-media a {
     margin: 10px;
     font-size: 1.4rem;
     color: white;
@@ -284,6 +300,30 @@ body {
 
 .social-media a:hover {
     transform: scale(1.2);
+} */
+.social-media {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-media a {
+    width: 35px;
+    height: 35px;
+    background: black;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-media a:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateY(-3px);
 }
 
 .hero-actions {
@@ -322,6 +362,10 @@ body {
         text-align: center;
     }
 
+    .social-media {
+        justify-content: center;
+        align-items: center;
+    }
     .rectangle-card h1 {
         font-size: 2rem;
     }
@@ -727,4 +771,13 @@ h1 {
   transform: translateY(-2px);
   opacity: 0.8;
   border-color: #00bfff;
+}
+
+.card-body{
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color)
+}
+
+.text-6{
+    color: #00bfff;
 }
